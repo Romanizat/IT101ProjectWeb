@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="bookstack.png"/>
+    <title>Kontakt</title>
+</head>
+<body>
+    <nav>
+        <h1>Bookvar Translations</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a href="demo.html">DEMO</a></li>
+            <li><a href="karijere.html">Karijere</a></li>
+            <li><a href="nama.html">O nama</a></li>
+            <li><a href="kompanija.html">O kompaniji</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="karijere">
+        <p class="fade-in2">Kontaktirajte nas</p>
+    </div>
+
+
+    <hr class="fade-in2">
+    <div class="fade-in3">
+        <div class="container">
+            <div class="block">
+                <form id="formica">
+                    <label for="ime">Unesite Vaše ime</label> <br/><br/>
+                    <input type="text" id="ime" placeholder="Unesite ime"> <br/><br/>
+                    <label for="prezime">Unesite Vaše prezime</label> <br/><br/>
+                    <input type="text" id="prezime" placeholder="Unesite prezime"><br/><br/>
+                    <label for="msgSubject">Unesite naslov poruke</label><br/><br/>
+                    <input type="text" id="msgSubject" placeholder="Unesite naslov"><br/><br/>
+                    <label for="msg">Unesite poruku</label><br/><br/>
+                    <textarea id="msg" cols="50" rows="5" placeholder="Napišite poruku..."></textarea><br/><br/>
+                    <label for="fon">Unesite broj telefona</label><br/><br/>
+                    <input type="text" id="fon" placeholder="npr. +381651234567"><br/><br/>
+                    <label for="pozicija">Kome biste uputili poruku?</label><br/><br/>
+                    <select id="opcije">
+                        <option value="null">Izaberite</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="hr">Ljudski resursi</option>
+                        <option value="ceo">Predsednik kompanije</option>
+                    </select>
+                    <br/><br/>
+                    <button type="button" onclick="proveraContact()">Pošalji</button>
+                </form>
+            </div>
+
+            <div class="block">
+                <p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.443300801229!2d21.91034330983445!3d43.3341222210978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0d0e124ba25%3A0xdf9a2926d16178d3!2sSveti%20Pantelejmon!5e0!3m2!1sen!2srs!4v1609973159737!5m2!1sen!2srs" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </p>
+
+                <p><u>Kontaktirajte nas putem elektronske pošte</u></p>
+                <p>contact@bookvar.com</p>
+
+                <p><u>Kontaktirajte nas putem telefona</u></p>
+                <p>(+381) 65 7654321</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="fade-in3">
+        <p>© Marko Josifović 4494</p>
+    </footer>
+
+    <script src=script.js></script>    
+</body>
+</html>

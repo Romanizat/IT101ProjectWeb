@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="bookstack.png" />
+</head>
+<body>
+    <nav>
+        <h1>Bookvar Translations</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a class="active" href="demo.html">DEMO</a></li>
+            <li><a href="karijere.html">Karijere</a></li>
+            <li><a href="nama.html">O nama</a></li>
+            <li><a href="kompanija.html">O kompaniji</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <video autoplay muted loop id="bgVideoCareer" src="demo.mp4" type="video/mp4">
+    </video>
+
+    <h3 class="fade-in2" id="natpisizracunaj"><u>Izračunajte koliko bi Vas koštale naše usluge:</u></h3>
+
+    <!-- <div class="checkboxs">
+    <input class="check" type="checkbox"> Prevođenje ENG>SRB  &nbsp&nbsp
+    <input type="number" class="kvantitet" placeholder="Broj reči za prevod"><br/><br/>
+    <input class="check" type="checkbox"> Prevođenje SRB>ENG  &nbsp&nbsp
+    <input type="number" class="kvantitet" placeholder="Broj reči za prevod"><br/><br/>
+    <input class="check" type="checkbox"> Transkripcija ENG &nbsp&nbsp &nbsp &nbsp &nbsp
+    <input type="number" class="kvantitet" placeholder="Broj minuta za transkript"><br/><br/>
+    <input class="check" type="checkbox"> Transkripcija SRB &nbsp &nbsp &nbsp &nbsp &nbsp
+    <input type="number" class="kvantitet" placeholder="Broj minuta za transkript"><br/><br/>
+    <input class="check" type="checkbox"> Korektura (Proofreading)    &nbsp&nbsp
+    <input type="number" class="kvantitet" placeholder="Broj reči za korekciju"><br/><br/>
+    </div>
+    
+    <div class="result">
+        <p id="result"></p>
+        <p id="1"></p>
+        <p id="2"></p>
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+    </div>
+    <button class=dugmence type="button" onclick="checked()">Izračunajte!</button> -->
+<div class="container fade-in2">
+    <div class="block1">
+        <input class="check" type="checkbox"> Prevođenje ENG>SRB <br/>
+        <input class="check" type="checkbox"> Prevođenje SRB>ENG <br/>
+        <input class="check" type="checkbox"> Transkripcija ENG <br/>
+        <input class="check" type="checkbox"> Transkripcija SRB <br/>
+        <input class="check" type="checkbox"> Korektura (Proofreading) <br/>
+    </div>
+
+    <div class="block1">
+        <input type="number" class="kvantitet" placeholder="Broj reči za prevod">
+        <input type="number" class="kvantitet" placeholder="Broj reči za prevod">
+        <input type="number" class="kvantitet" placeholder="Broj minuta za transkript">
+        <input type="number" class="kvantitet" placeholder="Broj minuta za transkript">
+        <input type="number" class="kvantitet" placeholder="Broj reči za korekciju">
+    </div>
+
+    <div class="block1">
+        <button class=dugmence type="button" onclick="checked()">Izračunajte!</button>
+    </div>
+
+    <div class="block1">
+        <p id="result"></p>
+        <p id="1"></p>
+        <p id="2"></p>
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+    </div>
+</div>
+    
+    <footer>
+        <p class="fade-in3">© Marko Josifović 4494</p>
+    </footer>
+
+    <script src=script.js></script>
+</body>
+</html>
