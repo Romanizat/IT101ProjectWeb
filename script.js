@@ -106,6 +106,14 @@ function hello(){
     }
 }
 
+function poljeEnter(id){
+    document.getElementById("polje"+id).style.opacity=1;
+}
+
+function poljeLeave(id){
+    document.getElementById("polje"+id).style.opacity = 0;
+}
+
 function filterin(id){
     document.getElementById("img"+String(id)).style.filter="grayscale(0%)";
 }
