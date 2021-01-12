@@ -23,32 +23,9 @@ function citati(){
     }else{
         index++;
     }
-
     document.getElementById("p1").innerHTML=citat[index];
     document.getElementById("p2").innerHTML=autor[index];
     setTimeout(citati,5000);
-}
-
-function poljeEnter(){
-    document.getElementById("polje1").style.opacity=1;
-}
-
-function poljeLeave(){
-    document.getElementById("polje1").style.opacity = 0;
-}
-function poljeEnter2(){
-    document.getElementById("polje2").style.opacity=1;
-}
-
-function poljeLeave2(){
-    document.getElementById("polje2").style.opacity = 0;
-}
-function poljeEnter3(){
-    document.getElementById("polje3").style.opacity=1;
-}
-
-function poljeLeave3(){
-    document.getElementById("polje3").style.opacity = 0;
 }
 
 function checked(){
@@ -114,7 +91,6 @@ function isEmpty(){
     return barJednoChekirano
 }
 
-
 function hello(){
     if(document.getElementById("ime").value==""){
         window.alert("Morate uneti ime");
@@ -130,31 +106,6 @@ function hello(){
     }
 }
 
-// function filterin1(){
-//     document.getElementById("img1").style.filter="grayscale(0%)";
-// }
-
-// function filterout1(){
-//     document.getElementById("img1").style.filter="grayscale(100%)";
-// }
-
-// function filterin2(){
-//     document.getElementById("img2").style.filter="grayscale(0%)";
-// }
-
-// function filterout2(){
-//     document.getElementById("img2").style.filter="grayscale(100%)";
-// }
-
-// function filterin3(){
-//     document.getElementById("img3").style.filter="grayscale(0%)";
-// }
-
-// function filterout3(){
-//     document.getElementById("img3").style.filter="grayscale(100%)";
-// }
-
-//proba sa parametrom
 function filterin(id){
     document.getElementById("img"+String(id)).style.filter="grayscale(0%)";
 }
@@ -162,7 +113,6 @@ function filterin(id){
 function filterout(id){
     document.getElementById("img"+String(id)).style.filter="grayscale(100%)";
 }
-
 
 function sadrziBroj(string){
     var niz= [0,1,2,3,4,5,6,7,8,9];
@@ -190,7 +140,6 @@ function fonProvera(string){
     return true;
 }
 
-
 function proveraContact (){
     var ime = document.getElementById("ime").value; //  ime i prezime moraju 
     var prezime = document.getElementById("prezime").value; //da budu jedna reč i da ne sadrže brojeve
@@ -213,6 +162,8 @@ function proveraContact (){
         window.alert("Broj telefona mora početi znakom '+'");
     }else if(!fonProvera(fon)){
         window.alert("Broj telefona mora sadržati samo cifre nakon znaka '+'");
+    }else if(document.getElementById("opcije").value=="null"){
+        window.alert("Morate izabrati kome biste uputili poruku!");
     }else{
         window.alert("Hvala na poruci!");
         document.getElementById("formica").reset();
